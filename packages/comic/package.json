@@ -1,0 +1,48 @@
+{
+	"name": "@mangasur/comic",
+	"version": "1.0.0",
+	"main": "src/index.ts",
+	"files": [
+		"dist"
+	],
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"types": "./dist/index.d.ts",
+			"require": "./dist/index.js"
+		},
+		"./typings": {
+			"import": "./dist/typings/index.mjs",
+			"types": "./dist/typings/index.d.ts",
+			"require": "./dist/typings/index.js"
+		},
+		"./typings/api": {
+			"import": "./dist/typings/api.mjs",
+			"types": "./dist/typings/api.d.ts",
+			"require": "./dist/typings/api.js"
+		}
+	},
+	"scripts": {
+		"build": "tsup src --dts",
+		"build:fast": "tsup src",
+		"typecheck": "tsc --noEmit"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mangasur/mangasur-repo.git"
+	},
+	"author": "FrierenDv",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/mangasur/mangasur-repo/issues"
+	},
+	"homepage": "https://github.com/mangasur/mangasur-repo#readme",
+	"description": "",
+	"dependencies": {
+		"@mangasur/system": "^1.0.0",
+		"undici": "^7.8.0"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	}
+}

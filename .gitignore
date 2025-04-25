@@ -134,3 +134,11 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# turbo
+.turbo
+
+# lockfiles for package managers
+.pnpm-lock.yaml
+package-lock.json
+yarn.lock

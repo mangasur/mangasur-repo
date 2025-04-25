@@ -1,0 +1,34 @@
+{
+	"name": "@mangasur/system",
+	"version": "1.0.0",
+	"main": "src/index.ts",
+	"files": [
+		"dist"
+	],
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"types": "./dist/index.d.ts",
+			"require": "./dist/index.js"
+		}
+	},
+	"scripts": {
+		"build": "tsup src --dts",
+		"build:fast": "tsup src",
+		"typecheck": "tsc --noEmit"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mangasur/mangasur-repo.git"
+	},
+	"author": "FrierenDv",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/mangasur/mangasur-repo/issues"
+	},
+	"homepage": "https://github.com/mangasur/mangasur-repo#readme",
+	"description": "",
+	"dependencies": {
+		"chalk": "^4.1.2"
+	}
+}
