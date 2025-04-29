@@ -6,6 +6,9 @@
 		"aaron-bond.better-comments",
 		"Gruntfuggly.todo-tree",
 		"DavidAnson.vscode-markdownlint",
-		"foxundermoon.shell-format"
+		"foxundermoon.shell-format",
+		"mikestead.dotenv",
+		"redhat.vscode-yaml",
+		"christian-kohler.npm-intellisense"
 	]
 }

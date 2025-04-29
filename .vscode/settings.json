@@ -8,20 +8,25 @@
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
 	"files.trimTrailingWhitespace": true,
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	"files.eol": "\n",
+
+	"[yaml]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
 	},
+	"yaml.format.singleQuote": true,
+	"yaml.format.enable": true,
+
 	"[markdown]": {
 		"editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
 	},
 	"typescript.tsdk": "node_modules/typescript/lib",
-	"jest.runMode": {
-		"type": "on-demand"
-	},
 	"[properties]": {
 		"editor.defaultFormatter": "foxundermoon.shell-format"
 	},
 	"[sql]": {
 		"editor.defaultFormatter": "mtxr.sqltools"
+	},
+	"[ignore]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format"
 	}
 }
