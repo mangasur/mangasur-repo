@@ -23,8 +23,8 @@
 		}
 	},
 	"scripts": {
-		"build": "tsup src --dts",
-		"build:fast": "tsup src",
+		"build": "tsc-multi --clean && tsc-multi",
+		"build:fast": "tsc",
 		"typecheck": "tsc --noEmit"
 	},
 	"repository": {
@@ -44,5 +44,8 @@
 	},
 	"engines": {
 		"node": ">=18.0.0"
+	},
+	"devDependencies": {
+		"tsc-multi": "^1.1.0"
 	}
 }
