@@ -52,4 +52,4 @@ const createLogger = () => {
 	) as Record<LogLevel, (message: Message) => void>;
 };
 
-export const { log, error, debug, warn, info } = createLogger();
+export const Logger = createLogger();
