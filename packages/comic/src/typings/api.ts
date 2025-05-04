@@ -232,14 +232,14 @@ export namespace API {
 			 */
 			previous_chapter: PartiallyRequired<
 				Typings.Chapter,
-				"slug" | "title" | "chapter_number" | "release_date"
+				"chapter_id" | "slug" | "title" | "chapter_number" | "release_date"
 			> | null;
 			/**
 			 * Next chapter.
 			 */
 			next_chapter: PartiallyRequired<
 				Typings.Chapter,
-				"slug" | "title" | "chapter_number" | "release_date"
+				"chapter_id" | "slug" | "title" | "chapter_number" | "release_date"
 			> | null;
 		};
 		export interface GetRequest {
@@ -253,9 +253,10 @@ export namespace API {
 			returns_?: (keyof Typings.Chapter)[];
 		}
 		export type GetResponse<T extends GetRequest> = Response<
-			T["returns_"] extends (keyof Typings.Chapter)[]
+			(T["returns_"] extends (keyof Typings.Chapter)[]
 				? Returns_<Typings.Chapter, T["returns_"][number]>
-				: Typings.Chapter
+				: Typings.Chapter) &
+				Extra
 		>;
 
 		export interface ListRequest {
